@@ -1,5 +1,4 @@
 import { createStackNavigator } from "react-navigation-stack";
-import { createAppContainer } from 'react-navigation';
 import WelcomeScreen from '../screens/WelcomeScreen';
 import LoginForm from "../screens/LoginForm";
 import Registerform from "../screens/Registerform";
@@ -37,4 +36,4 @@ const WelcomeLoginStack = createStackNavigator(screens, {
     }
 });
 
-export default createAppContainer(WelcomeLoginStack);
+export default WelcomeLoginStack;

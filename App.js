@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ImageBackground} from 'react-native';
-import Navigator from './app/routes/welcome_loginStack';
+import Navigator from './app/routes/drawer';
 
 export default function App() {
   
