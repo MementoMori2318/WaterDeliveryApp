@@ -6,11 +6,5 @@ export default function WaterShop() {
     return (
         <Text>Shop ng kahirapan</Text>
 
-
-
     );
   }
-  
-  const styles = StyleSheet.create({
-  
-  });

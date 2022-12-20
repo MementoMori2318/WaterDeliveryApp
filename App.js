@@ -1,6 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ImageBackground} from 'react-native';
-import Navigator from './app/routes/drawer';
+import 'react-native-gesture-handler';
+import Navigator from './app/routes/welcome_loginStack';
 
 export default function App() {
   
@@ -12,10 +11,4 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  image: {
-    flex: 1,
-    justifyContent: "center",
-    resizeMode: "cover",
-},
-});
+

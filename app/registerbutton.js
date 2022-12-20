@@ -18,11 +18,10 @@ const styles = StyleSheet.create({
         paddingVertical: 14,
         paddingHorizontal: 14,
         width: 300,
-        backgroundColor: "#F21314",
         alignItems: "center",
     },
     buttonText: {
-        color: "white",
+        color: "#000000",
         fontWeight: "bold",
         textTransform: "uppercase",
         fontSize: 20,

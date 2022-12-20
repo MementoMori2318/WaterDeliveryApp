@@ -1,35 +1,37 @@
-import React from 'react';
-import { Text, View, StyleSheet, Pressable } from 'react-native';
+import React from "react";
+import { StyleSheet, TouchableOpacity, Text, View } from "react-native";
 
-export default function Login_Button(props) {
-  const { onPress, title = 'Login' } = props;
+
+export default function Login_Button( { text, onPress} ) {
+    
+
   return (
-    <Pressable style={styles.button} onPress={onPress}>
-      <Text style={styles.text}>{title}</Text>
-    </Pressable>
-  );
+        <TouchableOpacity onPress={onPress}>
+            <View style={styles.button}>
+                <Text style={styles.buttonText}>{ text }
+                
+                </Text>
+            </View>
+            
+        </TouchableOpacity>
+    )
 }
 
 const styles = StyleSheet.create({
-  button: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: 18,
-    paddingHorizontal: 32,
-    borderRadius: 4,
-    elevation: 3,
-    backgroundColor: '#183792',
-    marginTop: 30,
-
-  },
-  text: {
-    fontSize: 16,
-    lineHeight: 21,
-    fontWeight: 'bold',
-    letterSpacing: 0.25,
-    color: 'white',
-    opacity: 5,
-
-  },
-
-});
+    button: {
+        borderRadius: 20,
+        paddingVertical: 14,
+        paddingHorizontal: 14,
+        width: 300,
+        backgroundColor: "#165581",
+        alignItems: "center",
+    },
+    buttonText: {
+        color: "white",
+        fontWeight: "bold",
+        textTransform: "uppercase",
+        fontSize: 20,
+        textAlign: "center",
+        
+    },
+})

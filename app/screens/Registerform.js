@@ -1,10 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput, Button, Image, ImageBackground, TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { StyleSheet, View, TextInput, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import Register_Button from './custom-made/Register_Button';
 
 
 
-export default function Registerform(props) {
+export default function Registerform() {
+  
+
+
   return (
    
     <TouchableWithoutFeedback onPress={() =>{
@@ -54,21 +56,18 @@ const styles = StyleSheet.create({
       flex: 1,
       justifyContent: "center",
       alignItems: "center",
-      backgroundColor: "#cde4f5", 
+      backgroundColor: "#FFF", 
     },  
     input: {
-    padding: 15,
-    margin: 15,
-    width: 350,
-    borderRadius: 1,
-        fontSize: 18,
-        backgroundColor: "#72A0D5",
-        color: "#FFFFFF",
-        },
-        image: {
-        flex: 1,
-        justifyContent: "center"
-        },
+      padding: 15,
+      margin: 15,
+      width: 350,
+      borderRadius: 20,
+      fontSize: 18,
+      backgroundColor: "#72A0D5",
+      color: "#FFFFFF",
+    },
+        
 
 
 });

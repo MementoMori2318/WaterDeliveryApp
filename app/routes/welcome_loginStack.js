@@ -1,7 +1,10 @@
 import { createStackNavigator } from "react-navigation-stack";
+import { createAppContainer } from 'react-navigation'
 import WelcomeScreen from '../screens/WelcomeScreen';
 import LoginForm from "../screens/LoginForm";
 import Registerform from "../screens/Registerform";
+import Home from "../screens/Home";
+
 
 const screens = {
     Welcome: {
@@ -25,6 +28,12 @@ const screens = {
             title: 'Register',
         } 
     },
+    Home: {
+        screen: Home,
+        navigationOptions: {
+            title: 'Wet',
+        }
+    },
 }
 
 const WelcomeLoginStack = createStackNavigator(screens, {
@@ -36,4 +45,4 @@ const WelcomeLoginStack = createStackNavigator(screens, {
     }
 });
 
-export default WelcomeLoginStack;
+export default createAppContainer(WelcomeLoginStack);

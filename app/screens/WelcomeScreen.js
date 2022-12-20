@@ -15,7 +15,7 @@ export default function WelcomeScreen({navigation}) {
 
     return (
         <SafeAreaView style={styles.container}>
-            <ImageBackground  source={require("../assets/logo2.png")}  resizeMode="cover"  style={styles.image}>
+            <ImageBackground  source={require("../assets/wetlogo.png")}  resizeMode="cover"  style={styles.image}>
                 <View style={styles.buttoncontainer} navigation>
                     <LoginButton text='Login' onPress={pressLogin}/>
                 </View>
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
       },
     buttoncontainer: {
-        marginBottom: 20,
+        marginBottom: 50,
     },
    
 })
